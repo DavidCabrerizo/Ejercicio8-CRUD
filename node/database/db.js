@@ -5,6 +5,6 @@ const db = new Sequelize('database_crud', 'root','Manolo28!',{
     dialect: 'mysql'
 
 })
-
+//prueba
 export default db
 

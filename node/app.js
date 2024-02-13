@@ -1,9 +1,9 @@
-import { Express } from "express";
+import express from 'express';
 import cors from 'cors';
 //importamos la conexion a la BD
 import db from './database/db.js';
-//importamos nuestro enrutador
-import blogRoutes from '.routes/routes.js'
+//importamos nuestro enruta
+import blogRoutes from './routes/routes.js';
 
 const app = express();
 
@@ -25,5 +25,4 @@ app.get ('/', (req, res) => {
 
 app.listen(8000,() => {
     console.log('Server UP running in the http://localhost:8000')
-    });
-    
+    })

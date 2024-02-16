@@ -96,6 +96,11 @@ const CompShowBlogs = () => {
                                         <button onClick={() => handleOpenModal(blog.titulo, blog.contenido)}>
                                             Open Modal
                                         </button>
+                                        <Box sx={{ '& > :not(style)': { m: 1 } }}>
+                                                <Fab color="success" aria-label="add">
+                                                    <DeleteIcon onClick={() => handleOpenModal(blog.titulo, blog.contenido)} fontSize="inherit" />
+                                                </Fab>
+                                            </Box>
                                         <BasicModal
                                             titulo={selectedBlog?.titulo}
                                             contenido={selectedBlog?.contenido}

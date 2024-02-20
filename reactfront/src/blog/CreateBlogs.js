@@ -46,26 +46,17 @@ const CompCreateBlog = () => {
                     /> */}
                 </div>
                 <div className='mb-3'>
-                    {/* <Box
-                        component="form"
-                        sx={{
-                            '& > :not(style)': { m: 1, width: '25ch' },
-                        }}
-                        noValidate
-                        autoComplete="off"
-                    >
-                        <TextField onChange={(e) => setContenido(e.target.value)} id="outlined-basic" label="Contenido" variant="outlined" />
-
-                    </Box> */}
-
                     <div>
                         <label for="OrderNotes" class="block text-sm font-medium text-gray-700"> Order notes </label>
 
                         <textarea
+                            
+
                             id="OrderNotes"
                             class="mt-2 w-full rounded-lg border-gray-200 align-top shadow-sm sm:text-sm"
                             rows="4"
                             placeholder="Enter any additional order notes..."
+                            onChange={(e) => setContenido(e.target.value)}
                         ></textarea>
                     </div>
 
